@@ -41,7 +41,7 @@ header {
 
 
 .bannière-permanente {
-    position: fixed;
+    position:fixed;
     top: 30px; /* Placez la bannière en haut de la page */
     right: 20px; /* Placez la bannière à droite de la page */
     background-color: rgba(73, 87, 133, 0.3); /* Couleur de fond de la bannière */
@@ -142,6 +142,8 @@ nav ul li a:hover {
 section {
     
     height: 100vh;
+    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -401,4 +403,117 @@ footer {
 
 .price-col button:hover{
     background: #e33058 ;
+}
+
+
+.contact {
+    height: 50vh;
+}
+
+
+
+
+@media (max-width: 768px) {
+    /* Styles à appliquer lorsque la largeur de l'écran est inférieure ou égale à 768 pixels */
+    body {
+        font-size: 10px; /* Réduire la taille de la police pour les écrans plus petits */
+        margin: 0;
+        padding: 0;
+    }
+    .menu {
+        display: none; /* Masquer le menu pour les écrans plus petits */
+    }
+
+    section {
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        background-color: #0B0B0B;
+        width: 100%;
+    
+    }
+    
+
+    section h2{
+        font-size: 20px;
+
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    .bannière-permanente {
+        position:fixed;
+        background-color: rgba(73, 87, 133, 0.3); /* Couleur de fond de la bannière */
+        padding: 5px; /* Ajoutez un peu d'espace autour des logos */
+        z-index: 1000; /* Assurez-vous que la bannière est au-dessus du contenu */
+        border-radius: 15px;
+        display: none;
+    }
+
+    .video-carousel-cover {
+        width: 100%;
+        
+    }
+
+    .price-col {
+        background: #1f283b;
+        padding: 3% 5%;
+        border-radius: 10px ;
+        color: #fff;
+        text-align: center;
+        max-width:30%;
+    
+    }
+
+    .price-col p{
+        font-size: 10px;
+    }
+
+    .price-col h3{
+        font-size: 20px;
+        margin: 20px 0 40px;
+        font-weight: 500;
+    }
+
+    .price-row {
+        display: flex; /* Utilisation de flexbox */
+        justify-content: space-between; /* Espacement égal entre les colonnes */
+        flex-wrap: wrap; /* Permettre le retour à la ligne lorsque l'espace est insuffisant */
+        gap: 10px;
+    }
+
+
+    
+    .video_apo {
+        margin-right: 0px ;
+        width: 100%;
+    }
+
+    header {
+        background-image: url('bannière 2.jpg'); /* Ajoutez le chemin vers votre image de bannière */
+        background-size:cover; /* Ajustez la taille de l'image pour couvrir toute la zone */
+        background-repeat: no-repeat; /* Évite la répétition de l'image de bannière */
+        background-attachment: fixed; /* Fixe l'image de bannière pour qu'elle reste en place pendant le défilement */
+        /* ... (les autres styles de la bannière existants) */
+    
+        background-color: transparent;
+        color: white;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.5rem;
+    
+    }
+ 
+ 
 }
